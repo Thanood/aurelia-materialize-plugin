@@ -1,8 +1,11 @@
-# aurelia-materialize-plugin
+# This plugin is not ready for any use
+
+
+### aurelia-materialize-plugin
 
 [![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.io) [![Join the chat at https://gitter.im/adriatic/Aurelia-UI-Toolkits](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adriatic/Aurelia-UI-Toolkits?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## Installing the plugin
+### Installing the plugin
 
 The steps here assume you are using JSPM for package management
 
