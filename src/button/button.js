@@ -1,4 +1,5 @@
 import {customAttribute, bindable, bindingMode, inject} from 'aurelia-framework';
+import {getBooleanFromAttribute} from '../common/attributes'
 import * as ripple from 'materialize/js/waves';
 
 @customAttribute('material-button')
@@ -14,23 +15,23 @@ export class MaterialButton {
 
   attached() {
     let classes = [ ];
-    if (this.large === true || this.large === 'true') {
+    if (getBooleanFromAttribute(this.large)) {
       classes.push('btn-large');
     } else {
       classes.push('btn');
     }
-    if (this.raised === false || this.raised === 'false') {
+    if (!getBooleanFromAttribute(this.raised)) {
       classes.push('btn-flat');
     }
     
-    if (this.ripple === true || this.ripple === 'true') {
+    if (getBooleanFromAttribute(this.ripple)) {
       classes.push('waves-effect');
       classes.push('waves-light');
     }
     
     classes.forEach(c => $(this.element).addClass(c));
     
-    if (this.ripple === true || this.ripple === 'true') {
+    if (getBooleanFromAttribute(this.ripple)) {
       ripple.attach(this.element);
     }
   }
