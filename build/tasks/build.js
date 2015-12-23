@@ -12,6 +12,7 @@ var tools = require('aurelia-tools');
 var del = require('del');
 var sass = require('gulp-sass');
 var vinylPaths = require('vinyl-paths');
+var sourcemaps = require('gulp-sourcemaps');
 
 var jsName = paths.packageName + '.js';
 
@@ -51,7 +52,9 @@ gulp.task('build-amd', function () {
 
 gulp.task('build-system', function () {
   return gulp.src(paths.source)
+    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(to5(assign({}, compilerOptions, {modules:'system'}, {plugins: []})))
+    .pipe(sourcemaps.write({includeContent: true}))
     .pipe(gulp.dest(paths.output + 'system'));
 });
 
