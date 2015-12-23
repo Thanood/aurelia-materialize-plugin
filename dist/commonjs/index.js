@@ -11,7 +11,7 @@ require('materialize/sass/materialize.css!');
 
 function configure(aurelia) {
 
-	var resources = ['collapsible/collapsible'];
+	var resources = ['collapsible/collapsible', 'button/button'];
 
 	aurelia.globalResources(resources);
 }

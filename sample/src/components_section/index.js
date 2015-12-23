@@ -6,7 +6,7 @@ export class Index {
     configureRouter(config, router){
         config.title = 'Components';
         config.map([
-          { route: ['','page1'],  moduleId: './page1',      nav: true, title:'Not Implemented' },
+          { route: ['','buttons'],  moduleId: './buttons',      nav: true, title:'Buttons' },
           ]);
 
         this.router = router;

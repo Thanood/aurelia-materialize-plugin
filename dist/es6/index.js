@@ -5,7 +5,8 @@ import 'materialize/sass/materialize.css!';
 export function configure(aurelia){
 
 	var resources = [
-	  'collapsible/collapsible'
+	  'collapsible/collapsible',
+    'button/button'
 	];
 	
 	aurelia.globalResources(resources);

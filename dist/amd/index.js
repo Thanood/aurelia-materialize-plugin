@@ -8,7 +8,7 @@ define(['exports', 'jquery', 'materialize/sass/materialize.css!'], function (exp
 
 	function configure(aurelia) {
 
-		var resources = ['collapsible/collapsible'];
+		var resources = ['collapsible/collapsible', 'button/button'];
 
 		aurelia.globalResources(resources);
 	}
