@@ -1,4 +1,4 @@
-define(['exports', 'jquery', 'materialize/sass/materialize.css!'], function (exports, _jquery, _materializeSassMaterializeCss) {
+define(['exports', 'jquery', 'materialize/sass/materialize.css!', 'materialize/js/bin/materialize.min'], function (exports, _jquery, _materializeSassMaterializeCss, _materializeJsBinMaterializeMin) {
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {

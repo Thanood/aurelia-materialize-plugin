@@ -39,6 +39,8 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.19",
     "font-awesome": "npm:font-awesome@4.4.0",
     "gooy/aurelia-markdown": "github:gooy/aurelia-markdown@0.0.3",
+    "hammer": "github:hammerjs/hammer.js@2.0.6",
+    "hammerjs": "github:hammerjs/hammer.js@2.0.6",
     "json": "github:systemjs/plugin-json@0.1.0",
     "kendo-ui": "github:kendo-labs/bower-kendo-ui@2015.2.813",
     "materialize": "github:dogfalo/materialize@0.96.1",
@@ -46,6 +48,7 @@ System.config({
     "showdownjs/showdown": "github:showdownjs/showdown@1.3.0",
     "systemjs/plugin-css": "github:systemjs/plugin-css@0.1.19",
     "twbs/bootstrap": "github:twbs/bootstrap@3.3.5",
+    "velocity": "github:julianshapiro/velocity@1.2.3",
     "github:aurelia/binding@0.9.1": {
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.10.1",
       "aurelia-metadata": "github:aurelia/metadata@0.8.0",
