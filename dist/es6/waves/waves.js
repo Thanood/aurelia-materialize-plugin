@@ -3,7 +3,7 @@ import { getBooleanFromAttribute } from '../common/attributes';
 import * as ripple from 'materialize/js/waves';
 
 @customAttribute('waves')
-@bindable({ name: 'light', defaultValue: true })
+@bindable({ name: 'light', defaultValue: false })
 @inject(Element)
 export class Waves {
   constructor(element) {
@@ -15,6 +15,7 @@ export class Waves {
     if (getBooleanFromAttribute(this.light)) {
       classes.push('waves-light');
     }
+    classes.forEach(c => this.element.classList.add(c));
     ripple.attach(this.element);
   }
 }

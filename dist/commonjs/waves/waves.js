@@ -28,17 +28,22 @@ var Waves = (function () {
   _createClass(Waves, [{
     key: 'attached',
     value: function attached() {
+      var _this = this;
+
       var classes = ['waves-effect'];
       if ((0, _commonAttributes.getBooleanFromAttribute)(this.light)) {
         classes.push('waves-light');
       }
+      classes.forEach(function (c) {
+        return _this.element.classList.add(c);
+      });
       ripple.attach(this.element);
     }
   }]);
 
   var _Waves = Waves;
   Waves = (0, _aureliaFramework.inject)(Element)(Waves) || Waves;
-  Waves = (0, _aureliaFramework.bindable)({ name: 'light', defaultValue: true })(Waves) || Waves;
+  Waves = (0, _aureliaFramework.bindable)({ name: 'light', defaultValue: false })(Waves) || Waves;
   Waves = (0, _aureliaFramework.customAttribute)('waves')(Waves) || Waves;
   return Waves;
 })();

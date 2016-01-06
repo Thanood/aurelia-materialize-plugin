@@ -1,4 +1,4 @@
-define(['exports', 'materialize/js/global', 'materialize/js/toasts', 'materialize/js/jquery.hammer', 'velocity'], function (exports, _materializeJsGlobal, _materializeJsToasts, _materializeJsJqueryHammer, _velocity) {
+define(['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {

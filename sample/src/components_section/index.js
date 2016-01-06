@@ -7,7 +7,8 @@ export class Index {
         config.title = 'Components';
         config.map([
           { route: ['','buttons'],  moduleId: './buttons',      nav: true, title:'Buttons' },
-          ]);
+          { route: ['collections'],  moduleId: './collections',      nav: true, title:'Collections' },
+        ]);
 
         this.router = router;
     }

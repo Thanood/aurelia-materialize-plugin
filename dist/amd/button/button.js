@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-framework', '../common/attributes', 'materialize/js/waves'], function (exports, _aureliaFramework, _commonAttributes, _materializeJsWaves) {
+define(['exports', 'aurelia-framework', '../common/attributes'], function (exports, _aureliaFramework, _commonAttributes) {
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {
@@ -31,24 +31,14 @@ define(['exports', 'aurelia-framework', '../common/attributes', 'materialize/js/
           classes.push('btn-flat');
         }
 
-        if ((0, _commonAttributes.getBooleanFromAttribute)(this.ripple)) {
-          classes.push('waves-effect');
-          classes.push('waves-light');
-        }
-
         classes.forEach(function (c) {
           return $(_this.element).addClass(c);
         });
-
-        if ((0, _commonAttributes.getBooleanFromAttribute)(this.ripple)) {
-          _materializeJsWaves.attach(this.element);
-        }
       }
     }]);
 
     var _MaterialButton = MaterialButton;
     MaterialButton = (0, _aureliaFramework.inject)(Element)(MaterialButton) || MaterialButton;
-    MaterialButton = (0, _aureliaFramework.bindable)({ name: 'ripple', defaultValue: true })(MaterialButton) || MaterialButton;
     MaterialButton = (0, _aureliaFramework.bindable)({ name: 'raised', defaultValue: true })(MaterialButton) || MaterialButton;
     MaterialButton = (0, _aureliaFramework.bindable)({ name: 'large', defaultValue: false })(MaterialButton) || MaterialButton;
     MaterialButton = (0, _aureliaFramework.customAttribute)('material-button')(MaterialButton) || MaterialButton;
