@@ -9,6 +9,8 @@ export function configure(aurelia){
 	var resources = [
 	  'collapsible/collapsible',
     'button/button',
+    'collection/collection',
+    'dialogs/tooltip',
     'waves/waves'
 	];
 	

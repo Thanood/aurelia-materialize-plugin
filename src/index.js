@@ -10,6 +10,7 @@ export function configure(aurelia){
 	  'collapsible/collapsible',
     'button/button',
     'collection/collection',
+    'dialogs/tooltip',
     'waves/waves'
 	];
 	

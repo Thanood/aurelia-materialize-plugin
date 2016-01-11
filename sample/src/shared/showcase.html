@@ -1,18 +1,21 @@
 <template>
     <!-- Page is shared by all widgets and sets up the sub-navigation pane -->
-    <section>
-        <h2>${ router.title }</h2>
-        <div>
-            <div class="col-md-2">
-                <ul class="well nav nav-pills nav-stacked">
-                    <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
-                        <a href.bind="row.href">${row.title}</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-10" style="padding: 0">
-                <router-view></router-view>
-            </div>
+      <div class="side-nav fixed">
+        <a class="brand-logo" href="#">
+        <img src="../images/materialize-logo_03_text.png">
+      </a>
+      <ul>
+        <li waves repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}" style="display: block;">
+            <a href.bind="row.href">${row.title}</a>
+        </li>
+      </ul>
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m9 l10">
+          <router-view></router-view>
         </div>
-    </section>
+      </div>
+    </div>
+    
 </template>

@@ -41,6 +41,7 @@ System.config({
     "gooy/aurelia-markdown": "github:gooy/aurelia-markdown@0.0.3",
     "hammer": "github:hammerjs/hammer.js@2.0.6",
     "hammerjs": "github:hammerjs/hammer.js@2.0.6",
+    "jquery": "npm:jquery@2.2.0",
     "json": "github:systemjs/plugin-json@0.1.0",
     "kendo-ui": "github:kendo-labs/bower-kendo-ui@2015.2.813",
     "materialize": "github:dogfalo/materialize@0.96.1",
